@@ -17,11 +17,12 @@ class RegionService {
     return this.get(`/api/RegionReport/GetProductInfo/${productCode}/${storeCode}/${inventoryDate}`);
   }
 
-  // Diğer servisler burada aynı mantıkla devam edebilir
+   SendApplicationMail(model) {
+    return axios.post('https://db.xenovo.com.tr/api/application-mail', model);
+  }
 }
 
 const service = new RegionService();
 
 export const GetInvDiffReport = service.GetInvDiffReport.bind(service);
-
-// diğerlerini eklemeyi unutma
+export const SendApplicationMail = service.SendApplicationMail(service);
