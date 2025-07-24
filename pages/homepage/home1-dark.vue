@@ -22,7 +22,7 @@ export default {
   layout: "dark",
   head() {
     return {
-      titleTemplate: '%s - Main Demo Dark'
+      titleTemplate: 'Xenovo'
     };
   },
   mounted() {
