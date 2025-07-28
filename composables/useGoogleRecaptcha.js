@@ -1,6 +1,5 @@
 // composables/useGoogleRecaptcha.js
 
-""
 /**
  * The exported executeRecaptcha function allows
  * you to execute reCAPTCHA actions
